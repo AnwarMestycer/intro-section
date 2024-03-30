@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,700;1,700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            medium: 'hsl(0, 0%, 41%)'
+          },
+          fonts: {
+            epilogue: 'Epilogue", sans-serif'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="/script.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body class="text-medium font-epilogue m-0">
+  <header class="items-center">
+    <nav class="p-4">
+      <div id="header" class="flex justify-between items-center">
+        <div class="flex gap-5">
+          <div>
+            <a href="#" class="font-bold  text-black text-3xl text-center">snap</a>
+          </div>
+          <!-- Left side of the navbar -->
+          <!-- Right side of the navbar -->
+          <div id="navbar" class="lg:ml-6">
+            <ul class="flex space-x-6">
+              <!-- Dropdown 1 -->
+              <li class="relative group">
+                <a href="#" class=" ">Features</a>
+                <ul class="justify-center rounded-lg w-40 absolute hidden bg-white pt-2 group-hover:block">
+                  <li><a href="#" class="flex gap-3 m-3 text-sm">
+                      <img src="/images/icon-todo.svg" alt=" todo list icon">
+                      <p>Todo List</p>
+                    </a></li>
+                  <li><a href="#" class="flex gap-3 m-3 text-sm">
+                      <img src="/images/icon-calendar.svg" alt="calendar icon">
+                      <p>Calendar</p>
+                    </a></li>
+                  <li><a href="#" class="flex gap-3 m-3 text-sm">
+                      <img src="/images/icon-reminders.svg" alt="reminder icon">
+                      <p>Reminders</p>
+                    </a></li>
+
+                  <li><a href="#" class="flex gap-3 m-3 text-sm">
+                      <img src="/images/icon-planning.svg" alt="planning icon">
+                      <p>Planning</p>
+                    </a></li>
+                </ul>
+              </li>
+              <!-- Dropdown 2 -->
+              <li class="relative group">
+                <a href="#" class="">Company</a>
+                <ul class="justify-center rounded-lg w-40 absolute hidden bg-white pt-2 group-hover:block">
+                  <li><a href="#" class="flex gap-3 m-3 text-sm">
+                      <p>History</p>
+                    </a></li>
+                  <li><a href="#" class="flex gap-3 m-3 text-sm">
+                      <p>Our team</p>
+                    </a></li>
+                  <li><a href="#" class="flex gap-3 m-3 text-sm">
+                      <p>Blog</p>
+                    </a></li>
+                </ul>
+              </li>
+              <!-- Regular Link 1 -->
+              <li><a href="#" class="hover:text-black">Careers</a></li>
+              <!-- Regular Link 2 -->
+              <li><a href="#" class="hover:text-black">About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="auth" class="flex gap-5 mr-4 hover:text-black">
+          <button class="hover:text-black">
+            Login
+          </button>
+          <button class="border rounded-lg p-2 hover:text-black hover:border-black">
+            Register
+          </button>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+  <main class="flex justify-center">
+    <div class="flex flex-col-reverse justify-between lg:flex-row lg:h-[480px] lg:w-[980px] lg:m-8">
+      <div class="flex flex-col items-center gap-6 lg:items-start justify-around lg:w-6/12">
+
+        <h1 class="text-black text-5xl font-extrabold">
+          Make remote work
+        </h1>
+        <p class=" p-2 text-center">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button
+          class="w-40 bg-black text-white text-lg font-bold p-4 border rounded-[20px] p-2 lg:bg-white lg:text-black lg:hover:text-black lg:hover:border-black">
+          Learn more
+
+        </button>
+
+        <div class="flex justify-between gap-5 lg:p-8">
+          <img src="/images/client-databiz.svg" alt="databiz logo">
+          <img src="/images/client-audiophile.svg" alt="audiophile logo">
+          <img src="/images/client-maker.svg" alt="maker logo">
+          <img src="/images/client-meet.svg" alt="meet logo ">
+        </div>
+      </div>
+      <img id="image" class="lg:w-5/12" src="/images/image-hero-desktop.png" alt="a person holding a pc">
+    </div>
+  </main>
+</body>
+
+</html>
