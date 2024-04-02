@@ -39,18 +39,18 @@
 
 <body class="text-medium font-epilogue m-0">
   <header class="items-center">
-    <nav class="p-4">
+    <nav class="p-3">
       <div id="header" class="flex justify-between items-center">
         <div class="lg:w-1/12">
           <a href="#" class="font-bold  text-black text-3xl text-center">snap</a>
         </div>
         <div id="sidebar"
-          class="h-full flex flex-col lg:items-center mr-10 w-[300px] -right-[350px] fixed t-0 bg-white text-xl lg:flex-row lg:w-11/12">
-          <ul class="lg:flex lg:space-x-6 m-4">
+          class="h-full lg:h-10 flex flex-col lg:justify-between lg:items-center w-[250px] -right-[300px] lg:-right-[50px] fixed bg-white text-lg lg:flex-row lg:w-11/12">
+          <ul class="lg:flex lg:space-x-6">
               <!-- Dropdown 1 -->
-              <li id="dropdownI" class="relative group m-4 hover:mb-[150px]">
+              <li id="dropdownI" class="relative group m-4 hover:mb-[160px]">
                 <a href="#" class="">Features</a>
-                <ul class="justify-center rounded-lg w-40 absolute hidden bg-white pt-1 m-3 group-hover:block">
+                <ul class="justify-center rounded-lg w-40 absolute hidden bg-white pt-2 m-3 group-hover:block">
                   <li><a href="#" class="flex gap-3 m-3 text-sm">
                       <img src="/images/icon-todo.svg" alt=" todo list icon">
                       <p>Todo List</p>
@@ -89,7 +89,7 @@
               <!-- Regular Link 2 -->
               <li class="m-4"><a href="#" class="hover:text-black">About</a></li>
             </ul>
-            <div id="auth" class="flex flex-col lg:flex-row gap-5 mr-4">
+            <div id="auth" class="flex flex-col items-center lg:flex-row gap-5 lg:mr-12">
               <button class="hover:text-black">
                 Login
               </button>
@@ -103,7 +103,6 @@
             <img id="menu" class="menu hidden" src="/images/icon-menu.svg" alt="menu icon" onclick="toggleSidebar()">
             
             </div>
-
       </div>
     </nav>
 
