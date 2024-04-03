@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -33,106 +34,92 @@
   </script>
   <script src="/script.js"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
 </head>
 
-<body class="text-medium font-epilogue m-0">
-  <header class="items-center">
-    <nav class="p-3">
-      <div id="header" class="flex justify-between items-center">
-        <div class="lg:w-1/12">
-          <a href="#" class="font-bold  text-black text-3xl text-center">snap</a>
+    </body>
+    
+    <body class="font-epilogue text-medium bg-green-50">
+      <header class="flex mt-3 ml-8 items-center gap-8">
+        <div class="w-1/12">
+          <p class="text-4xl font-extrabold text-black">snap</p>
         </div>
-        <div id="sidebar"
-          class="h-full lg:h-10 flex flex-col lg:justify-between lg:items-center w-[250px] -right-[300px] lg:-right-[50px] fixed bg-white text-lg lg:flex-row lg:w-11/12">
-          <ul class="lg:flex lg:space-x-6">
-              <!-- Dropdown 1 -->
-              <li id="dropdownI" class="relative group m-4 hover:mb-[160px]">
-                <a href="#" class="">Features</a>
-                <ul class="justify-center rounded-lg w-40 absolute hidden bg-white pt-2 m-3 group-hover:block">
+        <nav class="flex justify-between w-10/12">
+          <ul class="flex items-center gap-5 ">
+            <li class="flex items-center gap-2 relative group">
+              <a href="#" class="hover:text-black"> Features</a>
+              <img src="/images/icon-arrow-down.svg" alt="">
+              <ul class="justify-center rounded-lg w-40 absolute hidden bg-white mt-[200px] right-0 group-hover:block">
+                <li><a href="#" class="flex gap-3 m-3 text-sm">
+                    <img src="/images/icon-todo.svg" alt=" todo list icon">
+                    <p>Todo List</p>
+                  </a></li>
+                <li><a href="#" class="flex gap-3 m-3 text-sm">
+                    <img src="/images/icon-calendar.svg" alt="calendar icon">
+                    <p>Calendar</p>
+                  </a></li>
+                <li><a href="#" class="flex gap-3 m-3 text-sm">
+                    <img src="/images/icon-reminders.svg" alt="reminder icon">
+                    <p>Reminders</p>
+                  </a></li>
+                <li><a href="#" class="flex gap-3 m-3 text-sm">
+                    <img src="/images/icon-planning.svg" alt="planning icon">
+                    <p>Planning</p>
+                  </a></li>
+              </ul>
+            </li>
+            <li class="flex items-center gap-2 relative group">
+              <a href="#" class="hover:text-black">Company</a>
+              <ul class="justify-center rounded-lg w-40 absolute hidden bg-white mt-[160px] -right-[5rem] group-hover:block">
+                <li><a href="#" class="flex gap-3 m-3 text-sm">
+                    <p>History</p>
+                  </a></li>
+                <li><a href="#" class="flex gap-3 m-3 text-sm">
+                    <p>Our team</p>
+                  </a></li>
                   <li><a href="#" class="flex gap-3 m-3 text-sm">
-                      <img src="/images/icon-todo.svg" alt=" todo list icon">
-                      <p>Todo List</p>
-                    </a></li>
-                    <li><a href="#" class="flex gap-3 m-3 text-sm">
-                      <img src="/images/icon-calendar.svg" alt="calendar icon">
-                      <p>Calendar</p>
-                    </a></li>
-                  <li><a href="#" class="flex gap-3 m-3 text-sm">
-                      <img src="/images/icon-reminders.svg" alt="reminder icon">
-                      <p>Reminders</p>
-                    </a></li>
-                    <li><a href="#" class="flex gap-3 m-3 text-sm">
-                      <img src="/images/icon-planning.svg" alt="planning icon">
-                      <p>Planning</p>
-                    </a></li>
+                  <p>Blog</p>
+                  </a></li>
                   </ul>
-                  </li>
-                  <!-- Dropdown 2 -->
-                  <li id="dropdownII" class="relative group m-4 hover:mb-[130px]">
-                    <a href="#" class="">Company</a>
-                    <ul class="justify-center rounded-lg w-40 absolute hidden bg-white pt-2 m-3 group-hover:block">
-                      <li><a href="#" class="flex gap-3 m-3 text-sm">
-                      <p>History</p>
-                    </a></li>
-                    <li><a href="#" class="flex gap-3 m-3 text-sm">
-                      <p>Our team</p>
-                    </a></li>
-                  <li><a href="#" class="flex gap-3 m-3 text-sm">
-                      <p>Blog</p>
-                    </a></li>
-                  </ul>
-                  </li>
-              <!-- Regular Link 1 -->
-              <li class="m-4"><a href="#" class="hover:text-black">Careers</a></li>
-              <!-- Regular Link 2 -->
-              <li class="m-4"><a href="#" class="hover:text-black">About</a></li>
+              <img src="/images/icon-arrow-down.svg" alt="">
+            </li>
+            <li class="hover:text-black">Careers</li>
+            <li class="hover:text-black">About</li>
             </ul>
-            <div id="auth" class="flex flex-col items-center lg:flex-row gap-5 lg:mr-12">
-              <button class="hover:text-black">
-                Login
-              </button>
-              <button class="border rounded-lg p-2 hover:text-black hover:border-black">
-                Register
-              </button>
+          <div class="flex gap-8">
+            <button class="hover:text-black">Login</button>
+            <button class="border rounded-xl w-[6rem] w-[6rem] p-1.5 hover:border-black hover:text-black">Register</button>
+          </div>
+          </nav>
+      </header>
+      <main class="flex justify-center items-center mt-[4.7rem]">
+        <div class="flex flex-row-reverse justify-between w-[1120px] h-[580px] gap-8 ">
+          <img src="/images/image-hero-desktop.png">
+          <div class="flex flex-col justify-center gap-5 p-5 ml-3 w-6/12">
+            <div class="flex flex-col justify-start text-7xl font-bold text-black">
+              <p>
+                Make
+              </p>
+              <p>
+                remote work
+              </p>
+            </div>
+            <p class="pt-6 pb-6">
+              Get your team in sync, no matter your location. Streamline processes,
+              create team rituals, and watch productivity soar.
+            </p>
+            <button
+              class="border bg-black text-white rounded-xl h-[3rem] w-[8rem] mb-8 p-3 hover:text-black hover:bg-white hover:border-black">Learn
+              more</button>
+
+            <div class="flex justify-between gap-2 mt-4 mb-0">
+              <img src="/images/client-databiz.svg" alt="databiz logo">
+              <img src="/images/client-audiophile.svg" alt="audiophile logo">
+              <img src="/images/client-maker.svg" alt="maker logo">
+              <img src="/images/client-meet.svg" alt="meet logo ">
             </div>
             </div>
-            
-            
-            <img id="menu" class="menu hidden" src="/images/icon-menu.svg" alt="menu icon" onclick="toggleSidebar()">
-            
-            </div>
-      </div>
-    </nav>
-
-  </header>
-  <main class="flex justify-center">
-    <div class="flex flex-col-reverse justify-between lg:flex-row lg:h-[480px] lg:w-[980px] lg:m-8">
-      <div class="flex flex-col items-center gap-6 lg:items-start justify-around lg:w-6/12">
-
-        <h1 class="text-black text-center text-4xl pt-2 lg:text-5xl font-extrabold">
-          Make remote work
-        </h1>
-        <p class="p-2 text-center lg:text-start">
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <button
-          class="w-40 bg-black text-white text-lg font-bold p-4 border rounded-[20px] p-2 lg:bg-white lg:text-black lg:hover:text-black lg:hover:border-black">
-          Learn more
-
-        </button>
-
-        <div class="flex justify-between gap-3 lg:p-8">
-          <img src="/images/client-databiz.svg" alt="databiz logo">
-          <img src="/images/client-audiophile.svg" alt="audiophile logo">
-          <img src="/images/client-maker.svg" alt="maker logo">
-          <img src="/images/client-meet.svg" alt="meet logo ">
         </div>
-      </div>
-      <img id="image" class=" w-full lg:w-5/12" src="/images/image-hero-desktop.png" alt="a person holding a pc">
-    </div>
+        </div>
   </main>
 </body>
 
